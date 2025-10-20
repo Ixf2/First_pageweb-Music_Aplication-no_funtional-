@@ -1,0 +1,33 @@
+#structure{
+    background-color: red;
+}
+#container-head{
+    background-color: yellow;
+}
+#container-head-up{
+    background-color: green;
+}
+#container-head-down{
+    background-color: greenyellow;
+}
+#container-content{
+    background-color: rgb(100, 134, 49);
+}
+#container-content-menu{
+    background-color: orange;
+}
+#container-content-article{
+    background-color: blue;
+}
+#container-footer{
+    background-color: greenyellow;
+}
+#container-footer-left{
+    background-color: greenyellow;
+}
+#container-footer-middle{
+    background-color: greenyellow;
+}
+#container-footer-right{
+    background-color: greenyellow;
+}
