@@ -68,7 +68,8 @@
 /* Bloque del footer general */
 #container-footer{
     display: flex;
-    flex-wrap: w;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 30vw;
     height: 10rem;
     /* display: none; */
