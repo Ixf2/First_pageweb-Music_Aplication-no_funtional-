@@ -9,6 +9,8 @@
 #structure-main{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: end;
     width: 100vw;
     height: 100vh;
     background-color: red;
@@ -16,72 +18,82 @@
 
 /* Encabezado general */
 #container-head{
-    /* width: 100vw;
-    height: 5rem; */
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 5rem;
+    /* display: none; */
     background-color: yellow;
 }
 
 /* Bloque de arriba de encabezado */
 #container-head-up{
-    width: 50vw;
-    height: 3rem;
+    width: 100vw;
+    height: 2.5rem;
     background-color: green;
 }
 
 /* Bloque de abajo de encabezado */
 #container-head-down{
-    width: 50vw;
-    height: 20vh;
+    width: 100vw;
+    height: 2.5rem;
     background-color: greenyellow;
 }
 
 /* Bloque donde va a estar el contenido, principalmente articles */
 #container-content{
-    /* width: 20vw;
-    height: 100vh; */
-    display: none;
-    background-color: rgb(100, 134, 49);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50vw;
+    height: calc(100vh - 5rem);
+    /* display: none; */
+    background-color: white;
 }
 
 /* Bloque de artículos, que va a contener un menú */
 #container-content-menu{
-    width: 20vw;
-    height: 100vh;
+    width: 5rem;
+    height: 75vh;
     background-color: orange;
 }
 
 /* Bloque del contenido de los artículos */
 #container-content-article{
-    width: 20vw;
-    height: 100vh;
+    width: 100vw;
+    height: 5rem;
     background-color: blue;
 }
 
 /* Bloque del footer general */
 #container-footer{
-    width: 20vw;
-    height: 100vh;
+    display: flex;
+    flex-wrap: w;
+    width: 30vw;
+    height: 10rem;
+    /* display: none; */
+
     background-color: purple;
 }
 
 /* Bloque del footer, el cuál contendrá información,  */
 #container-footer-left{
-
+    width: 15vw;
+    height: 5rem;
     background-color: brown;
 }
 
 /* Bloque del footer, que va a tener o un mini menú o subir */
 #container-footer-middle{
     width: 20vw;
-    height: 100vh;
+    height: calc(10rem - 5rem);
     background-color: burlywood;
 }
 
 /* Bloque del footer, */
 #container-footer-right{
     width: 20vw;
-    height: 100vh;
+    height: 20vh;
     background-color: rebeccapurple;
 }
 
