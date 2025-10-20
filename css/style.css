@@ -6,7 +6,9 @@
 }
 
 /* Bloque entero de estructura */
-#structure{
+#structure-main{
+    display: flex;
+    flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
     background-color: red;
@@ -14,29 +16,31 @@
 
 /* Encabezado general */
 #container-head{
-    width: 20vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 5rem; */
+    display: none;
     background-color: yellow;
 }
 
 /* Bloque de arriba de encabezado */
 #container-head-up{
-    width: 20vw;
-    height: 100vh;
+    width: 50vw;
+    height: 3rem;
     background-color: green;
 }
 
 /* Bloque de abajo de encabezado */
 #container-head-down{
-    width: 20vw;
-    height: 100vh;
+    width: 50vw;
+    height: 20vh;
     background-color: greenyellow;
 }
 
 /* Bloque donde va a estar el contenido, principalmente articles */
 #container-content{
-    width: 20vw;
-    height: 100vh;
+    /* width: 20vw;
+    height: 100vh; */
+    display: none;
     background-color: rgb(100, 134, 49);
 }
 
@@ -58,27 +62,27 @@
 #container-footer{
     width: 20vw;
     height: 100vh;
-    background-color: greenyellow;
+    background-color: purple;
 }
 
 /* Bloque del footer, el cuál contendrá información,  */
 #container-footer-left{
 
-    background-color: greenyellow;
+    background-color: brown;
 }
 
 /* Bloque del footer, que va a tener o un mini menú o subir */
 #container-footer-middle{
     width: 20vw;
     height: 100vh;
-    background-color: greenyellow;
+    background-color: burlywood;
 }
 
 /* Bloque del footer, */
 #container-footer-right{
     width: 20vw;
     height: 100vh;
-    background-color: greenyellow;
+    background-color: rebeccapurple;
 }
 
 /* Extra small devices (phones, 600px and down) */
