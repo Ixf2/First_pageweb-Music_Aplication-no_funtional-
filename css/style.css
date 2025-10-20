@@ -1,34 +1,83 @@
+/* Para cuadrar todas las ventanas en el navegador */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Bloque entero de estructura */
 #structure{
+    width: 100vw;
+    height: 100vh;
     background-color: red;
 }
+
+/* Encabezado general */
 #container-head{
+    width: 20vw;
+    height: 100vh;
     background-color: yellow;
 }
+
+/* Bloque de arriba de encabezado */
 #container-head-up{
+    width: 20vw;
+    height: 100vh;
     background-color: green;
 }
+
+/* Bloque de abajo de encabezado */
 #container-head-down{
+    width: 20vw;
+    height: 100vh;
     background-color: greenyellow;
 }
+
+/* Bloque donde va a estar el contenido, principalmente articles */
 #container-content{
+    width: 20vw;
+    height: 100vh;
     background-color: rgb(100, 134, 49);
 }
+
+/* Bloque de artículos, que va a contener un menú */
 #container-content-menu{
+    width: 20vw;
+    height: 100vh;
     background-color: orange;
 }
+
+/* Bloque del contenido de los artículos */
 #container-content-article{
+    width: 20vw;
+    height: 100vh;
     background-color: blue;
 }
+
+/* Bloque del footer general */
 #container-footer{
+    width: 20vw;
+    height: 100vh;
     background-color: greenyellow;
 }
+
+/* Bloque del footer, el cuál contendrá información,  */
 #container-footer-left{
+
     background-color: greenyellow;
 }
+
+/* Bloque del footer, que va a tener o un mini menú o subir */
 #container-footer-middle{
+    width: 20vw;
+    height: 100vh;
     background-color: greenyellow;
 }
+
+/* Bloque del footer, */
 #container-footer-right{
+    width: 20vw;
+    height: 100vh;
     background-color: greenyellow;
 }
 
@@ -54,5 +103,5 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
+
 }
