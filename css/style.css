@@ -4,99 +4,92 @@
     padding: 0;
     border: 0;
 }
-
-/* Bloque entero de estructura */
-#structure-main{
+/* ---------------------------------------------------------------------- */
+/*----------------------------Bloque de Header general------------------- */
+/* ---------------------------------------------------------------------- */
+#container-header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: end;
-    width: 100vw;
-    height: 100vh;
-    background-color: red;
-}
-
-/* Encabezado general */
-#container-head{
-    display: flex;
-    flex-wrap: wrap;
+    
     width: 100vw;
     height: 5rem;
-    /* display: none; */
-    background-color: yellow;
+    
+    background-color: red;
+    
 }
 
-/* Bloque de arriba de encabezado */
-#container-head-up{
+
+.container-header-up{
     width: 100vw;
     height: 2.5rem;
-    background-color: green;
+    
+    background-color: orange;
+    
 }
 
-/* Bloque de abajo de encabezado */
-#container-head-down{
+.container-header-down{
     width: 100vw;
     height: 2.5rem;
+    
+    background-color: rgb(121, 79, 2);
+    
+}
+
+
+
+/* ---------------------------------------------------------------------- */
+/* ----------------------------Bloque de MAIN---------------------------- */
+/* ---------------------------------------------------------------------- */
+#container-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    width: 100vw;
+    height: 70vh;
+
     background-color: greenyellow;
 }
 
-/* Bloque donde va a estar el contenido, principalmente articles */
-#container-content{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 50vw;
-    height: calc(100vh - 5rem);
-    /* display: none; */
-    background-color: white;
-}
-
-/* Bloque de artículos, que va a contener un menú */
-#container-content-menu{
-    width: 5rem;
-    height: 75vh;
-    background-color: orange;
-}
-
-/* Bloque del contenido de los artículos */
-#container-content-article{
+.container-main-filters{
     width: 100vw;
-    height: 5rem;
+    height: 15vh;
+
     background-color: blue;
 }
 
-/* Bloque del footer general */
+.container-main-article{
+    width: 100vw;
+    height: calc(15vh - 70vh);
+
+    background-color: blueviolet;
+}
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/* ----------------------------Bloque de FOOTER---------------------------- */
+/* ---------------------------------------------------------------------- */
 #container-footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 30vw;
-    height: 10rem;
-    /* display: none; */
+    justify-content: space-between;
+
+    width: 100vw;
+    height: 5rem;
 
     background-color: purple;
 }
 
-/* Bloque del footer, el cuál contendrá información,  */
-#container-footer-left{
-    width: 15vw;
+.container-footer-menu-bassic{
+    width: 100vw;
     height: 5rem;
-    background-color: brown;
+
+    background-color: aqua;
 }
 
-/* Bloque del footer, que va a tener o un mini menú o subir */
-#container-footer-middle{
-    width: 20vw;
-    height: calc(10rem - 5rem);
-    background-color: burlywood;
-}
-
-/* Bloque del footer, */
-#container-footer-right{
-    width: 20vw;
-    height: 20vh;
-    background-color: rebeccapurple;
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
