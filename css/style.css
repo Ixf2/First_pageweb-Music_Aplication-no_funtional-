@@ -48,7 +48,7 @@
 
     width: 100vw;
     height: 70vh;
-
+    min-height: calc(100vh - 10rem);
     background-color: greenyellow;
 }
 
@@ -60,8 +60,7 @@
 }
 
 .container-main-article{
-    width: 100vw;
-    height: calc(15vh - 70vh);
+    flex: 1;
 
     background-color: blueviolet;
 }
@@ -72,23 +71,46 @@
 /* ---------------------------------------------------------------------- */
 /* ----------------------------Bloque de FOOTER---------------------------- */
 /* ---------------------------------------------------------------------- */
+
+/* object-fit: cover; Hace que la imagen llene el espacio sin deformarse. */
 #container-footer{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
+    align-content: center;
+    
     width: 100vw;
     height: 5rem;
-
+    
     background-color: purple;
+    /* padding: 0 0rem;    Espacio interior de los container */
 }
 
 .container-footer-menu-bassic{
-    width: 100vw;
-    height: 5rem;
+    width: 6.5rem;
+    height: 4rem;
+    border-radius: 0.5rem;
 
     background-color: aqua;
 }
+
+
+.container-footer-social-red{
+    width: 6.5rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+
+    background-color: salmon;
+}
+
+.container-footer-image{
+    width: 6.5rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+
+    background-color: darkred;
+}
+
+
 
 
 /* Extra small devices (phones, 600px and down) */
