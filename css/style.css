@@ -1,3 +1,6 @@
+/* =================================================================================================== */
+/* ======================================DISEÑO MOBILE================================================ */
+/* =================================================================================================== */
 /* Para cuadrar todas las ventanas en el navegador */
 * {
     margin: 0;
@@ -123,8 +126,113 @@
 
 }
 
+/* =================================================================================================== */
+/* ======================================DISEÑO TABLET================================================ */
+/* =================================================================================================== */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+/* ---------------------------------------------------------------------- */
+/*----------------------------Bloque de Header general------------------- */
+/* ---------------------------------------------------------------------- */
+#container-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    
+    width: 5rem;
+    height: 100vh;
+    
+    background-color: red;
+    
+}
+
+
+.container-header-up{
+    width: 2.5rem;
+    height: 100vh;
+    
+    background-color: orange;
+    
+}
+
+.container-header-down{
+    width: 2.5rem;
+    height: 100vh;
+    
+    background-color: rgb(121, 79, 2);
+    
+}
+
+/* ---------------------------------------------------------------------- */
+/* ----------------------------Bloque de MAIN---------------------------- */
+/* ---------------------------------------------------------------------- */
+#container-main{
+    display: flex;
+    flex-direction: row;
+    /* Ocupa todo el espacio restante */
+    flex: 1;
+    height: 70vh;
+    
+    
+    background-color: greenyellow;
+}
+
+.container-main-filters{
+    width: 15vw;
+    height: 100vh;
+
+    background-color: blue;
+}
+
+.container-main-article{
+    flex: 1;
+
+    background-color: blueviolet;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ----------------------------Bloque de FOOTER---------------------------- */
+/* ---------------------------------------------------------------------- */
+
+/* object-fit: cover; Hace que la imagen llene el espacio sin deformarse. */
+#container-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    
+    width: 100vw;
+    height: 5rem;
+    
+    background-color: purple;
+    /* padding: 0 0rem;    Espacio interior de los container */
+}
+
+.container-footer-menu-bassic{
+    width: 6.5rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+
+    background-color: aqua;
+}
+
+
+.container-footer-social-red{
+    width: 6.5rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+
+    background-color: salmon;
+}
+
+.container-footer-image{
+    width: 6.5rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+
+    background-color: darkred;
+}
+
 
 }
 
