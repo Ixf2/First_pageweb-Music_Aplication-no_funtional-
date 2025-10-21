@@ -136,12 +136,12 @@
 /* ---------------------------------------------------------------------- */
 #container-header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
 
     
-    width: 5rem;
-    height: 100vh;
+    width: 100vw;
+    height: 3.5rem;
     
     background-color: red;
     
@@ -149,8 +149,10 @@
 
 
 .container-header-up{
-    width: 2.5rem;
-    height: 100vh;
+    width: 5rem;
+    height: 2.5rem;
+    padding: 0 15rem;
+    border-radius: 25rem;
     
     background-color: orange;
     
@@ -158,11 +160,22 @@
 
 .container-header-down{
     width: 2.5rem;
-    height: 100vh;
+    height: 2.5rem;
+    padding: 0 8.4rem;
+    border-radius: 25rem;
+
     
     background-color: rgb(121, 79, 2);
     
 }
+
+#container-header-menu-lateral{
+    display: block;
+    width: 2.5rem;
+    height: 100vh;
+}
+
+
 
 /* ---------------------------------------------------------------------- */
 /* ----------------------------Bloque de MAIN---------------------------- */
