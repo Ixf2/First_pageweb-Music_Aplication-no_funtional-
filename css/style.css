@@ -10,9 +10,10 @@
 /* ---------------------------------------------------------------------- */
 /*----------------------------Bloque de Header general------------------- */
 /* ---------------------------------------------------------------------- */
-#container-header{
+#home-header{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     
     width: 100vw;
@@ -23,22 +24,29 @@
 }
 
 
-.container-header-up{
-    width: 100vw;
-    height: 2.5rem;
+.home-header-left{
+    width: 30vw;
+    height: 5rem;
     
     background-color: orange;
     
 }
 
-.container-header-down{
-    width: 100vw;
-    height: 2.5rem;
+.home-header-middle{
+    width: 30vw;
+    height: 5rem;
     
     background-color: rgb(121, 79, 2);
     
 }
 
+.home-header-rigth{
+    width: 30vw;
+    height: 5rem;
+    
+    background-color: rgb(179, 7, 93);
+    
+}
 
 
 /* ---------------------------------------------------------------------- */
