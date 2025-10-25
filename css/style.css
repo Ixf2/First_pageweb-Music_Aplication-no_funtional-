@@ -65,10 +65,16 @@
 #container-main{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     /* Para poner un espacio entre cada artículo */
     gap: 10px;
 
     width: 100vw;
+    /* Para cuadrar los article con el footer y main */
+    padding-top: 5rem;
+    padding-bottom: 20.5vh;
+
+
     /* Se quita por que sino ocuparía toda la ventana */
     /* height: 100vh; */
     background-color: greenyellow;
@@ -84,7 +90,7 @@
 .content-article-up{
     width: 100vw;
     height: 16.6vh;
-    margin-top: 2px;
+    margin-top: 1px;
     
     background-color: blue;
 }
@@ -100,30 +106,43 @@
 .content-article-rigth{
     width: 100vw;
     height: 16.6vh;
-    margin-top: 2px;
+    margin-top: 1px;
 
     background-color: rgb(77, 58, 100);
 }
 
 
 
+
 /* object-fit: cover; Hace que la imagen llene el espacio sin deformarse. */
-#container-footer{
+#container-footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
+
     /* Poner abajo siempre, fijo en pantalla. bottom al fondo y left alineado. */
     position: fixed;
     bottom: 0;          
     left: 0;            
     z-index: 10; 
 
+    
+
     width: 100vw;
-    height: 10vh;
+    height: 20vh;
     
     background-color: purple;
     
+}
+
+.icon-pageweb{
+    width: 6.5rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+
+
 }
 
 .container-footer-menu-bassic{
@@ -151,22 +170,43 @@
     background-color: darkred;
 }
 
+.footer-copyrigth{
+    width: 6.5rem;
+    height: 4rem;
+    border-radius: 0.5rem;
 
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+    background-color: darkgreen;
 }
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    #home-header {
+        width: 100%;
+        padding-top: 0px;
+        /* Quitamos el fijo de Header */
+        position: static;
+
+    }
+
+    .home-header-left, .home-header-middle, .home-header-rigth,
+    .home-header-Tablet-left, .home-header-Tablet-middle, .home-header-Tablet-rigth{
+        width: 15vw;
+        height: 5rem;
+        border-radius: 14ch;
+
+        background-color: black;
+    }
+    
+    #container-main{
+        padding-top: 0;
+        padding-bottom: 0;
+
+    }
+
+
+
+
 
 }
 
