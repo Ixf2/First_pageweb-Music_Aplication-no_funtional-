@@ -81,6 +81,24 @@
     background-color: greenyellow;
 }
 
+.article-img{
+    width: 100%;
+    height: 30vw;
+    overflow: hidden;
+    border-radius: 0.5rem 0.5rem 0;
+    
+}
+
+.article-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    display: block;
+    
+}
+
 .flex-content{
     display: flex;
     flex-direction: column;
@@ -88,7 +106,7 @@
 
 }
 
-.content-article-up{
+/* .content-article-up{
     width: 100vw;
     height: 16.6vh;
     margin-top: 1px;
@@ -110,7 +128,7 @@
     margin-top: 1px;
 
     background-color: rgb(77, 58, 100);
-}
+} */
 
 
 
@@ -227,30 +245,62 @@
 
 
 
-
-
 #container-main {
     padding-top: 0;
     padding-bottom: 0;
     position: static;
     gap: 10px;
 
-
-
+    /* Por problemas de columnas, me voy asegurar que sea flex el bloque */
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
 }
 
-.flex-content{
+.content-article-card{
     width: 48%;
-    flex-direction: row;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: green;
+}
+/* .flex-content{
+    width: 48%;
+    flex-direction: column;
+} */
+
+.content-article-middle, .content-article-rigth, .content-article-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* gap: 0.5rem; */
+    padding: 1rem;
+    margin: 0;
+
+    width: 31%;
+    height: auto;
+
+    /* background-color: white; */
+    border: 1px solid #eee;
+    border-radius: 5px;
+
+    
 }
 
-
-
-
-
+.article-img img{
+    width: 100%;
+    height: 100%;
+   
+    object-fit: contain;
+    object-position: center;
+    border-radius: 0.5rem 0.5rem 0;
+    display: block;
+}
 
 #container-footer{
     /* Dejar anclado el footer */
@@ -259,17 +309,19 @@
     position: static;
 
     width: 100%;
-
-    
-
-
 }
+
+
+
 #container-footer #container-footer-content-text{
     flex-direction: row;
     gap: 2rem;
     align-items: flex-start;
 
 }
+
+
+
 
 .container-footer-image, .container-footer-menu-bassic, .container-footer-social-red{
     display: flex;
@@ -296,12 +348,17 @@
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
 
-}
+
+
+
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+    .content-article-card{
+        width: 31%;
+        height: auto;
+    }
+    
 }
