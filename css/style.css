@@ -1,20 +1,16 @@
-/* =================================================================================================== */
-/* ======================================DISEÑO MOBILE================================================ */
-/* =================================================================================================== */
 /* Para cuadrar todas las ventanas en el navegador */
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
-/* ---------------------------------------------------------------------- */
-/*----------------------------Bloque de Header general------------------- */
-/* ---------------------------------------------------------------------- */
+
 #home-header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    
 
     /* Fijo arriba */
     position: fixed;
@@ -27,6 +23,8 @@
     height: 5rem;
     
     background-color: red;
+    color: white;
+    font-size: 1rem;
     
 }
 
@@ -59,9 +57,12 @@
 }
 
 
-/* ---------------------------------------------------------------------- */
-/* ----------------------------Bloque de MAIN---------------------------- */
-/* ---------------------------------------------------------------------- */
+
+
+
+
+
+
 #container-main{
     display: flex;
     flex-wrap: wrap;
@@ -114,11 +115,16 @@
 
 
 
+
+
+
+
+
 /* object-fit: cover; Hace que la imagen llene el espacio sin deformarse. */
 #container-footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
 
 
@@ -132,17 +138,31 @@
 
     width: 100vw;
     height: 20vh;
+    padding: 1rem 0;
     
     background-color: purple;
+    color: white;
     
 }
 
+
+
 .icon-pageweb{
     width: 6.5rem;
-    height: 4rem;
+    height: 6.5rem;
     border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    background-image: url(#);
+    background-color: transparent;
+}
 
-
+#container-footer-content-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 1rem;
 }
 
 .container-footer-menu-bassic{
@@ -179,34 +199,99 @@
 }
 
 
+
+
+
+
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    #home-header {
-        width: 100%;
-        padding-top: 0px;
-        /* Quitamos el fijo de Header */
-        position: static;
+#home-header {
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* Quitamos el fijo de Header */
+    position: static;
 
-    }
+}
 
-    .home-header-left, .home-header-middle, .home-header-rigth,
-    .home-header-Tablet-left, .home-header-Tablet-middle, .home-header-Tablet-rigth{
-        width: 15vw;
-        height: 5rem;
-        border-radius: 14ch;
+.home-header-left, .home-header-middle, .home-header-rigth,
+.home-header-Tablet-left, .home-header-Tablet-middle, .home-header-Tablet-rigth{
+    width: 15vw;
+    height: 5rem;
+    border-radius: 14ch;
 
-        background-color: black;
-    }
+    background-color: black;
+}
+
+
+
+
+
+#container-main {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: static;
+    gap: 10px;
+
+
+
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.flex-content{
+    width: 48%;
+    flex-direction: row;
+}
+
+
+
+
+
+
+#container-footer{
+    /* Dejar anclado el footer */
+    padding-top: 0;
+    padding-bottom: 0;
+    position: static;
+
+    width: 100%;
+
     
-    #container-main{
-        padding-top: 0;
-        padding-bottom: 0;
-
-    }
 
 
+}
+#container-footer #container-footer-content-text{
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
 
+}
 
+.container-footer-image, .container-footer-menu-bassic, .container-footer-social-red{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* Ocupa espacio proporcional entre todos los bloques */
+    flex: 1;
+    
+
+    width: 30vw;
+    height: auto;
+    
+
+    background-color: transparent;
+}
+
+.footer-copyrigth{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
 
 }
 
