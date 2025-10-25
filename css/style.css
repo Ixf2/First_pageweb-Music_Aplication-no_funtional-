@@ -26,6 +26,12 @@
     color: white;
     font-size: 1rem;
     
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+
 }
 
 
@@ -56,7 +62,9 @@
     
 }
 
-
+.home-header-Tablet-left, .home-header-Tablet-middle, .home-header-Tablet-rigth{
+    display: none;
+}
 
 
 
@@ -238,9 +246,13 @@
 .home-header-Tablet-left, .home-header-Tablet-middle, .home-header-Tablet-rigth{
     width: 15vw;
     height: 5rem;
-    border-radius: 14ch;
+    border-radius: 5ch;
 
     background-color: black;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
