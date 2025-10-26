@@ -22,7 +22,7 @@
     width: 100vw;
     height: 5rem;
 
-    background-color: red;
+    background-color: rgb(82, 1, 99);
     color: white;
     font-size: 1rem;
 
@@ -38,9 +38,9 @@
 .home-header-left {
     width: 25vw;
     height: 5rem;
-    border-radius: 14ch;
+    margin-right: 1rem;
 
-    background-color: orange;
+    background-color: transparent;
 
     display: flex;
     justify-content: center;
@@ -59,18 +59,22 @@
 .home-header-middle {
     width: 25vw;
     height: 5rem;
-    border-radius: 14ch;
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
 
-    background-color: rgb(121, 79, 2);
+    background-color:transparent;
 
 }
 
 .home-header-rigth {
     width: 25vw;
     height: 5rem;
-    border-radius: 14ch;
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
 
-    background-color: rgb(179, 7, 93);
+    background-color:transparent;
 
 }
 
@@ -101,8 +105,30 @@
 
     /* Se quita por que sino ocuparía toda la ventana */
     /* height: 100vh; */
-    background-color: greenyellow;
+    background-color: rgb(255, 255, 255);
 }
+
+#slider-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90vw;
+    height: auto;
+
+}
+.swiper-slide-footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    border-radius: 4rem;
+    background-color: rgb(228, 228, 228);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
 
 .article-img {
     width: 100%;
@@ -129,6 +155,9 @@
 
 }
 
+.content-article-card{
+    background-color: rgb(186, 255, 186);
+}
 
 
 
@@ -146,15 +175,15 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 10;
+    z-index: 10vw;
 
 
 
     width: 100vw;
-    height: 20vh;
+    height: 15vh;
     padding: 1rem 0;
 
-    background-color: purple;
+    background-color: rgb(82, 1, 99);
     color: white;
 
 }
@@ -184,7 +213,7 @@
     height: 4rem;
     border-radius: 0.5rem;
 
-    background-color: aqua;
+    background-color:transparent;
 }
 
 
@@ -193,7 +222,7 @@
     height: 4rem;
     border-radius: 0.5rem;
 
-    background-color: salmon;
+    background-color:transparent;
 }
 
 .container-footer-image {
@@ -201,17 +230,20 @@
     height: 4rem;
     border-radius: 0.5rem;
 
-    background-color: darkred;
+    background-color:transparent;
 }
 
 .footer-copyrigth {
-    width: 6.5rem;
+    width: 50rem;
     height: 4rem;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
+
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 
     background-color: transparent;
 }
@@ -249,14 +281,15 @@
     .home-header-Tablet-rigth {
         width: 15vw;
         height: 5rem;
-        border-radius: 5ch;
+        
 
-        background-color: black;
+        background-color:transparent;
 
         display: block;
         align-items: center;
         justify-content: center;
         text-align: center;
+        margin-right: 1rem;
     }
 
 
@@ -282,7 +315,7 @@
         display: flex;
         flex-direction: column;
 
-        background-color: green;
+        background-color: rgb(186, 255, 186);
     }
 
     /* .flex-content{
@@ -363,7 +396,8 @@
         width: 90vw;
         display: flex;
         justify-content: center;
-        font-size: 0.8rem;
+        font-size: 1rem;
+        
     }
 
 
