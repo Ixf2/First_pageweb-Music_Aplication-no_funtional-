@@ -300,20 +300,20 @@
     transform: translateY(-5px);
 }
 
-#upload-meme {
+#upload-barrio {
     background-color: #f8f8f8;
     padding: 2rem;
     text-align: center;
 }
 
-#upload-meme h2 {
+#upload-barrio h2 {
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
     color: #520163;
 
 }
 
-#upload-meme form {
+#upload-barrio form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,8 +325,8 @@
     margin: 0 auto;
 }
 
-#upload-meme input [type="text"],
-#upload-meme input [type="file"] {
+#upload-barrio input [type="text"],
+#upload-barrio input [type="file"] {
     width: 100%;
     padding: 0.5rem;
     border-radius: 5px;
