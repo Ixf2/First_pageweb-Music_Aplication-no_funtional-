@@ -49,10 +49,10 @@
 
 }
 
-.home-header-left img{
+.home-header-left img {
     width: auto;
     height: 80%;
-    overflow: cover;
+    /* overflow: cover; */
     object-fit: contain;
 }
 
@@ -63,7 +63,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color:transparent;
+    background-color: transparent;
 
 }
 
@@ -74,7 +74,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color:transparent;
+    background-color: transparent;
 
 }
 
@@ -92,7 +92,7 @@
 #container-main {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     /* Para poner un espacio entre cada artículo */
     gap: 10px;
@@ -108,7 +108,7 @@
     background-color: rgb(255, 255, 255);
 }
 
-#slider-box{
+#slider-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +117,8 @@
     height: auto;
 
 }
-.swiper-slide-footer{
+
+.swiper-slide-footer {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -128,10 +129,10 @@
 
 }
 
-#trending-meme{
+#trending-meme {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     width: 90vw;
@@ -144,8 +145,8 @@
 }
 
 
-#trending-meme h2{
-    
+#trending-meme h2 {
+
     display: flex;
     align-items: flex-start;
 
@@ -156,16 +157,22 @@
 
 }
 
-.grid-memes{
+.grid-memes {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
+    align-items: flex-start;
+
+    overflow: auto;
     gap: 1rem;
+    width: 100%;
 }
 
-.meme-card{
-    width: 20vw;
-    border-radius: 2rem;
+.meme-card {
+    
+    width: 22vw;
+    border-radius: 1rem;
     overflow: hidden;
     background-color: white;
     text-align: center;
@@ -173,9 +180,10 @@
 
 }
 
-.meme-card img{
+.meme-card img {
     width: 100%;
     height: auto;
+    display: block;
 
 }
 
@@ -183,9 +191,9 @@
 
 .article-img {
     width: 100%;
-    height: 30vw;
-    overflow: hidden;
-    border-radius: 0.5rem 0.5rem 0;
+    height: 100%;
+    
+
 
 }
 
@@ -199,35 +207,38 @@
 
 }
 
-.flex-content {
+
+.content-article-card {
+    width: 90%;
+
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    align-items: center;
 
-}
-
-.content-article-card{
+    border-radius: 0.5rem;
+    overflow: hidden;
     background-color: rgb(186, 255, 186);
+
 }
 
-#upload-meme{
-     background-color: #f8f8f8;
+#upload-meme {
+    background-color: #f8f8f8;
     padding: 2rem;
     text-align: center;
 }
 
-#upload-meme h2{
+#upload-meme h2 {
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
     color: #520163;
 
 }
 
-#upload-meme form{
+#upload-meme form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem; 
+    gap: 1rem;
 
     /*Para colocarlo tuve que pedir ayuda a Chatgpt, intenté durante 1 hora xd, pero no sabía 
     que existía el max o el min */
@@ -235,7 +246,8 @@
     margin: 0 auto;
 }
 
-#upload-meme input [type="text"], #upload-meme input [type="file"]{
+#upload-meme input [type="text"],
+#upload-meme input [type="file"] {
     width: 100%;
     padding: 0.5rem;
     border-radius: 5px;
@@ -259,7 +271,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 10vw;
+    /* z-index: 10vw; */
 
 
 
@@ -286,7 +298,7 @@
 #container-footer-content-text {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
     margin-bottom: 1rem;
@@ -301,7 +313,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color:transparent;
+    background-color: transparent;
 }
 
 
@@ -314,7 +326,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color:transparent;
+    background-color: transparent;
 }
 
 .container-footer-image {
@@ -322,7 +334,7 @@
     height: 4rem;
     border-radius: 0.5rem;
 
-    background-color:transparent;
+    background-color: transparent;
 }
 
 .footer-copyrigth {
@@ -358,12 +370,12 @@
 
     }
 
-    .home-header-left img{
-    width: 40%;
-    height: 5vw;
-    overflow: cover;
-    border-radius: 0.5rem 0.5rem 0;
-}
+    .home-header-left img {
+        width: 40%;
+        height: 5vw;
+        overflow: cover;
+        border-radius: 0.5rem 0.5rem 0;
+    }
 
     .home-header-left,
     .home-header-middle,
@@ -373,9 +385,9 @@
     .home-header-Tablet-rigth {
         width: 15vw;
         height: 5rem;
-        
 
-        background-color:transparent;
+
+        background-color: transparent;
 
         display: block;
         align-items: center;
@@ -387,8 +399,6 @@
 
 
     #container-main {
-        padding-top: 0;
-        padding-bottom: 0;
         position: static;
         gap: 10px;
 
@@ -410,10 +420,7 @@
         background-color: rgb(186, 255, 186);
     }
 
-    /* .flex-content{
-    width: 48%;
-    flex-direction: column;
-} */
+
 
     .content-article-middle,
     .content-article-rigth,
@@ -489,7 +496,7 @@
         display: flex;
         justify-content: center;
         font-size: 1rem;
-        
+
     }
 
 
@@ -511,13 +518,11 @@
         height: auto;
     }
 
-    .home-header-left img{
-    width: 40%;
-    height: 4rem;
-    overflow: cover;
-    border-radius: 0.5rem 0.5rem 0;
-}
-    
-}
+    .home-header-left img {
+        width: 40%;
+        height: 4rem;
+        overflow: cover;
+        border-radius: 0.5rem 0.5rem 0;
+    }
 
-
+}
