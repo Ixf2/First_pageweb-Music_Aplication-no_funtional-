@@ -197,7 +197,6 @@
 }
 
 .meme-card {
-
     width: 22vw;
     border-radius: 1rem;
     overflow: hidden;
@@ -208,7 +207,7 @@
 }
 
 .meme-card img {
-    width: 100%;
+    width: 40%;
     height: auto;
     display: block;
 
@@ -370,7 +369,6 @@
     /* Poner abajo siempre, fijo en pantalla. bottom al fondo y left alineado. */
     /* Always place it at the bottom, fixed on screen. bottom keeps it at the end and left aligns it. */
     position: fixed;
-    position: fixed;
     bottom: 0;
     left: 0;
     /* z-index: 10vw; */
@@ -455,7 +453,7 @@
 }
 
 .footer-copyrigth {
-    width: 50rem;
+    width: 5rem;
     height: 4rem;
 
     display: flex;
@@ -529,6 +527,7 @@
     #container-main {
         position: static;
         gap: 10px;
+        padding-bottom: 15vh;
 
         /* Por problemas de columnas, me voy asegurar que sea flex el bloque */
         /* Due to column issues, I’ll make sure the block is flex */
