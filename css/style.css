@@ -31,9 +31,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
-
-
 }
 
 #home-header button {
@@ -49,8 +46,6 @@
     transition: 0.3s;
     background-color: rgba(255, 255, 255, 0.1);
 }
-
-
 
 .home-header-left {
     width: 25vw;
@@ -100,6 +95,16 @@
 .home-header-Tablet-rigth {
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -345,6 +350,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /* object-fit: cover; Hace que la imagen llene el espacio sin deformarse. */
 /* object-fit: cover; Makes the image fill the space without distortion. */
 #container-footer {
@@ -431,10 +444,6 @@
     transition: 0.3s;
     background-color: rgba(255, 255, 255, 0.1);
 }
-
-
-
-
 
 
 .container-footer-image {
