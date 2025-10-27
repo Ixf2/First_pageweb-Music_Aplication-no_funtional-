@@ -331,24 +331,14 @@
 /* object-fit: cover; Hace que la imagen llene el espacio sin deformarse. */
 /* object-fit: cover; Makes the image fill the space without distortion. */
 #container-footer {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-
-    /* Poner abajo siempre, fijo en pantalla. bottom al fondo y left alineado. */
-    /* Always place it at the bottom, fixed on screen. bottom keeps it at the end and left aligns it. */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    /* z-index: 10vw; */
-
-
 
     width: 100%;
-    height: 15vh;
-    padding-top: 1rem;
+    min-height: 200px;
+    padding: 1rem;
+    gap: 10px;
 
     background-color: rgb(82, 1, 99);
     color: white;
@@ -357,54 +347,24 @@
 
 
 .icon-pageweb {
-    width: 6.5rem;
-    height: 6.5rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-    background-image: url(#);
-    background-color: transparent;
+    display: flex;
+    justify-content: center;
 }
 
 #container-footer-content-text {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
-    margin-bottom: 1rem;
 }
 
-.container-footer-menu-bassic {
-    width: 6.5rem;
-    height: 4rem;
-    border-radius: 0.5rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: transparent;
+.container-footer-menu-bassic,
+.container-footer-social-red,
+.container-footer-image {
+    /* Expandir elemento */
+    flex-grow: 1;
+    
 }
-
-
-.container-footer-social-red {
-    width: 6.5rem;
-    height: 4rem;
-    border-radius: 0.5rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: transparent;
-}
-
-#container-footer-social-red button {
-    background: none;
+.container-footer-social-red button{
     border: 0.5rem;
-    cursor: pointer;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 #container-footer-social-red button:hover {
@@ -413,49 +373,16 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-
-.container-footer-image {
-    width: 6.5rem;
-    height: 4rem;
-    border-radius: 0.5rem;
-
-    background-color: transparent;
+.container-footer-image img{
+    width: 5rem;
+    height: 5rem;
 }
+
 
 .footer-copyrigth {
-    width: 5rem;
-    height: 4rem;
-
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-
-    background-color: transparent;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -545,14 +472,6 @@
     }
 
 
-
-    #container-footer #container-footer-content-text {
-        flex-direction: row;
-        gap: 2rem;
-        align-items: flex-start;
-
-    }
-
     .container-footer-image,
     .container-footer-menu-bassic,
     .container-footer-social-red {
@@ -571,14 +490,6 @@
         background-color: transparent;
     }
 
-    .footer-copyrigth {
-        width: 90vw;
-        display: flex;
-        justify-content: center;
-        font-size: 1rem;
-
-    }
-
 
 
 
@@ -592,7 +503,9 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .home-header-Tablet-middle, .home-header-Tablet-rigth{
+
+    .home-header-Tablet-middle,
+    .home-header-Tablet-rigth {
         display: block;
     }
 
