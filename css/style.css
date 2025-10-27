@@ -1,4 +1,5 @@
 /* Para cuadrar todas las ventanas en el navegador */
+/* To align all windows in the browser */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@
 
 
     /* Fijo arriba */
+    /* Fixed at the top */
     position: fixed;
     top: 0;
     left: 0;
@@ -110,15 +112,18 @@
     /* align-items: center; */
     justify-content: center;
     /* Para poner un espacio entre cada artículo */
+    /* To add space between each article */
     gap: 10px;
 
     width: 100%;
     /* Para cuadrar los article con el footer y main */
+    /* To align the articles with the footer and main */
     padding-top: 5rem;
     padding-bottom: 20.5vh;
 
 
     /* Se quita por que sino ocuparía toda la ventana */
+    /* Removed because otherwise it would take up the whole window */
     /* height: 100vh; */
     background-color: rgb(255, 255, 255);
 }
@@ -205,7 +210,7 @@
 }
 
 /* Referencia para el hover https://www.youtube.com/watch?v=D1p2Sl6lxX4 author midudev */
-
+/* Reference for the hover effect https://www.youtube.com/watch?v=D1p2Sl6lxX4 author: midudev */
 .article-img {
     width: 100%;
     height: 100%;
@@ -321,6 +326,7 @@
 
     /*Para colocarlo tuve que pedir ayuda a Chatgpt, intenté durante 1 hora xd, pero no sabía 
     que existía el max o el min */
+    /* To position it I had to ask ChatGPT for help — I tried for an hour lol, but didn’t know that max or min existed */
     max-width: 400px;
     margin: 0 auto;
 }
@@ -340,6 +346,7 @@
 
 
 /* object-fit: cover; Hace que la imagen llene el espacio sin deformarse. */
+/* object-fit: cover; Makes the image fill the space without distortion. */
 #container-footer {
     display: flex;
     flex-direction: column;
@@ -348,6 +355,8 @@
 
 
     /* Poner abajo siempre, fijo en pantalla. bottom al fondo y left alineado. */
+    /* Always place it at the bottom, fixed on screen. bottom keeps it at the end and left aligns it. */
+    position: fixed;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -465,6 +474,7 @@
         padding-top: 4px;
         padding-bottom: 4px;
         /* Quitamos el fijo de Header */
+        /* Remove the fixed position from Header */
         position: static;
 
     }
@@ -512,6 +522,7 @@
         gap: 10px;
 
         /* Por problemas de columnas, me voy asegurar que sea flex el bloque */
+        /* Due to column issues, I’ll make sure the block is flex */
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -564,6 +575,7 @@
 
     #container-footer {
         /* Dejar anclado el footer */
+        /* Keep the footer anchored */
         padding-top: 0;
         padding-bottom: 0;
         position: static;
@@ -590,6 +602,7 @@
         flex-direction: row;
         gap: 0.5rem;
         /* Ocupa espacio proporcional entre todos los bloques */
+        /* Occupies proportional space among all blocks */
         flex: 1;
 
 
