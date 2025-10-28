@@ -70,7 +70,8 @@ Special thanks to all open-source creators whose projects served as learning ref
 
 1. Clone this repository or download it to your computer:
    ```bash
-   git clone https://github.com/Ixf2/SesameStreet-WebProject.git
+   git clone [First_pageweb-no_funtional-](https://github.com/Ixf2/First_pageweb-no_funtional-)
+
 
 📸 Preview
 <img width="1917" height="891" alt="image" src="https://github.com/user-attachments/assets/43908c39-d45c-451f-b115-ce7484d14520" />
