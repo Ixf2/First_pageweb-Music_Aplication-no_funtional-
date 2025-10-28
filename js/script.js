@@ -18,7 +18,7 @@ const form = document.querySelector("#upload-barrio form");
 // Form add event.
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    // Input's
+    // Input's.
     const name_form = document.querySelector("#name_form").value.trim();
     const email_form = document.querySelector("#email_form").value.trim();
     const archive_form = document.querySelector("#file_form").value.trim();  // Cambiado a .value para textarea
@@ -27,7 +27,7 @@ form.addEventListener("submit", (e) => {
     if (!name_form || !email_form || !archive_form) {
         alert("Por favor, llena todos los campos antes de enviar.");
     } else {
-        // En el objeto JSON
+        // Json text
         const formData = {
             nombre: name_form,
             email: email_form,
@@ -45,8 +45,8 @@ form.addEventListener("submit", (e) => {
         const blob = new Blob([jsonDates], { type: "application/json" });  // Blob mayúscula
         const url = URL.createObjectURL(blob);
 
-        // Temporal Link (corregido)
-        const jsonLink = document.createElement('a');  // Cambiado a 'a'
+        // Temporal Link
+        const jsonLink = document.createElement('a');  
         jsonLink.href = url;
         // Name file
         jsonLink.download = "sugerencia.json";
