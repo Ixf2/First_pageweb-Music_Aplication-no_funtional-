@@ -24,8 +24,9 @@ The site is designed as a **visual prototype**, focusing on layout, semantic str
 ---
 
 ## 🧱 Project Structure
+ 
+📁 SesameStreet-WebProject  
 
-📁 SesameStreet-WebProject
 │
 ├── 📄 index.html
 ├── 📁 css
