@@ -315,8 +315,14 @@
     font-size: 1rem;
 }
 
-
-
+#file_form {
+    width: 100%;  /* Ancho completo del contenedor */
+    height: 100px;  /* Altura fija (ajusta) */
+    resize: vertical;  /* Permite al usuario redimensionar verticalmente */
+    font-family: inherit;  /* Mantiene la fuente de la página */
+    padding: 10px;  /* Espacio interno */
+    border: 1px solid #ccc;  /* Borde simple */
+}
 
 
 
@@ -385,15 +391,31 @@
     height: 5rem;
 }
 
+.container-footer-social-red a {
+    /* Para que hover funcione */
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    padding: 5xp;
+}
+
+.container-footer-social-red a:hover{
+    background-color: #B13BFF;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px;
+}
+
+.container-footer-social-red a:hover img {
+    /* Hace la imagen más brillante y satura */
+    filter: brightness(1.2) saturate(1.5);
+    transition: filter 0.3s ease;
+}
 
 .footer-copyrigth {
     display: flex;
     justify-content: center;
 
 }
-
-
-
 
 
 
