@@ -46,7 +46,7 @@ form.addEventListener("submit", (e) => {
         const url = URL.createObjectURL(blob);
 
         // Temporal Link
-        const jsonLink = document.createElement('a');  
+        const jsonLink = document.createElement('a');
         jsonLink.href = url;
         // Name file
         jsonLink.download = "sugerencia.json";
