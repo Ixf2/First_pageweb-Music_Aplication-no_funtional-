@@ -28,10 +28,10 @@ The site is designed as a **visual prototype**, focusing on layout, semantic str
 📁 SesameStreet-WebProject  
 
 │
-├── 📄 index.html
-├── 📁 css
-│ └── style.css
-├── 📁 js
+├── 📄 index.html  
+├── 📁 css  
+│ └── style.css  
+├── 📁 js  
 │ └── script.js
 ├── 📁 img
 │ ├── favicon/
