@@ -49,6 +49,20 @@ The site is designed as a **visual prototype**, focusing on layout, semantic str
 - **JavaScript (basic)** — interactivity  
 - **Git + GitHub** — version control and repository hosting  
 
+## 🙌 Credits & References
+
+This project was inspired and supported by ideas, resources, and people from the GitHub community:
+
+- [@gunterdev](https://github.com/gunterdev)
+- [@sdvictorvergara](https://github.com/sdvictorvergara)
+- [@midudev ](https://github.com/midudev)   
+- [@tcrurav](https://github.com/tcrurav)
+
+Special thanks to all open-source creators whose projects served as learning references.
+
+> If you contributed to this project or inspired any part of it, feel free to contact me to be added here 💛
+
+
 ---
 
 ## 🚀 How to View the Project
