@@ -32,15 +32,15 @@ The site is designed as a **visual prototype**, focusing on layout, semantic str
 ├── 📁 css  
 │ └── style.css  
 ├── 📁 js  
-│ └── script.js
-├── 📁 img
-│ ├── favicon/
-│ ├── article-images/
-│ ├── footer-images/
-│ └── ...
-└── 📁 video
-├── barrio-sesamo-song.mp4
-└── up-down-coco-video.mp4
+│ └── script.js  
+├── 📁 img  
+│ ├── favicon/  
+│ ├── article-images/  
+│ ├── footer-images/  
+│ └── ...  
+└── 📁 video  
+├── barrio-sesamo-song.mp4  
+└── up-down-coco-video.mp4  
 ---
 
 ## 🖥️ Technologies Used
