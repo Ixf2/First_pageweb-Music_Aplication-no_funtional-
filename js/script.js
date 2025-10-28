@@ -1,35 +1,62 @@
 const botones = document.querySelectorAll("#home-header button");
 
-botones.forEach(boton =>{
+botones.forEach(boton => {
     boton.addEventListener("mouseover", () => {
         boton.style.backgroundColor = "#B13BFF";
         boton.style.color = "#FFCC00";
     });
 
-    boton.addEventListener("mouseout", () =>{
+    boton.addEventListener("mouseout", () => {
         boton.style.backgroundColor = "rgb(82, 1, 99)";
         boton.style.color = "white";
     });
 });
 
 // Form.
-const form = document.querySelector ("#upload-barrio form");
+const form = document.querySelector("#upload-barrio form");
 
 // Form add event.
-form.addEventListener("submit", (e) =>{
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
     // Input's
-    const name_form = document.querySelector("#name_form").value;
-    const email_form = document.querySelector("#email_form").value;
-    const archive_form = document.querySelector("#file_form").files[0];
+    const name_form = document.querySelector("#name_form").value.trim();
+    const email_form = document.querySelector("#email_form").value.trim();
+    const archive_form = document.querySelector("#file_form").value.trim();  // Cambiado a .value para textarea
 
     // Verify the element not null.
-    if (!name_form || !email_form || !archive_form){
+    if (!name_form || !email_form || !archive_form) {
         alert("Por favor, llena todos los campos antes de enviar.");
-        // Cancel the send
-        e.preventDefault();
     } else {
+        // En el objeto JSON
+        const formData = {
+            nombre: name_form,
+            email: email_form,
+            description: archive_form,  // Para textarea
+            date: new Date().toISOString()
+        };
+
+        // JSON
+        const jsonDates = JSON.stringify(formData, null, 2);
+
+        // Generate Json
+        localStorage.setItem("ultimaSugerencia", jsonDates);
+
+        // Blob Json (corregido)
+        const blob = new Blob([jsonDates], { type: "application/json" });  // Blob mayúscula
+        const url = URL.createObjectURL(blob);
+
+        // Temporal Link (corregido)
+        const jsonLink = document.createElement('a');  // Cambiado a 'a'
+        jsonLink.href = url;
+        // Name file
+        jsonLink.download = "sugerencia.json";
+        document.body.appendChild(jsonLink);
+        jsonLink.click();
+        document.body.removeChild(jsonLink);
+        // Clear Link
+        URL.revokeObjectURL(url);
+
         alert("¡Gracias por tu sugerencia!");
+        form.reset();
     }
 });
-
-

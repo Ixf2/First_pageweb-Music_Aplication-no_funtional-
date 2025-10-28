@@ -315,8 +315,14 @@
     font-size: 1rem;
 }
 
-
-
+#file_form {
+    width: 100%;  /* Ancho completo del contenedor */
+    height: 100px;  /* Altura fija (ajusta) */
+    resize: vertical;  /* Permite al usuario redimensionar verticalmente */
+    font-family: inherit;  /* Mantiene la fuente de la página */
+    padding: 10px;  /* Espacio interno */
+    border: 1px solid #ccc;  /* Borde simple */
+}
 
 
 
