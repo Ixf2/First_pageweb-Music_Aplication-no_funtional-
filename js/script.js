@@ -13,7 +13,7 @@ botones.forEach(boton => {
 });
 
 // Form.
-const form = document.querySelector("#upload-barrio form");
+const form = document.querySelector("#upload-barrio form, #container-footer-social-red");
 
 // Form add event.
 form.addEventListener("submit", (e) => {
@@ -60,3 +60,4 @@ form.addEventListener("submit", (e) => {
         form.reset();
     }
 });
+
