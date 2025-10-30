@@ -1,44 +1,44 @@
 /* Para cuadrar todas las ventanas en el navegador */
 /* To align all windows in the browser */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 #home-header {
-    width: 100%;
-    display: flex;
-    /* flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap;
     flex-direction: row; */
-    justify-content: space-around;
-    align-items: center;
+  justify-content: space-around;
+  align-items: center;
 
-    /* Fijo arriba, se pega*/
-    /* Fixed at the top */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
+  /* Fijo arriba, se pega*/
+  /* Fixed at the top */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 
 
-    height: 5rem;
+  height: 5rem;
 
-    background-color: rgb(82, 1, 99);
+  background-color: rgb(82, 1, 99);
 }
 
 #home-header button {
-    background: none;
-    border: 0.5rem;
-    cursor: pointer;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+  background: none;
+  border: 0.5rem;
+  cursor: pointer;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #home-header button:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .home-header-Tablet-left,
@@ -47,16 +47,16 @@
 .home-header-middle,
 .home-header-rigth,
 .home-header-left {
-    min-width: 10rem;
-    height: 5rem;
-    font-size: 1.5rem;
-    color: white;
+  min-width: 10rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .home-header-left img {
-    height: 80%;
-    /* overflow: cover; */
-    object-fit: contain;
+  height: 80%;
+  /* overflow: cover; */
+  object-fit: contain;
 }
 
 
@@ -64,7 +64,7 @@
 .home-header-Tablet-left,
 .home-header-Tablet-middle,
 .home-header-Tablet-rigth {
-    display: none;
+  display: none;
 }
 
 
@@ -75,111 +75,111 @@
 
 
 #container-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    /* align-items: center; */
-    align-items: center;
-    /* Para poner un espacio entre cada artículo */
-    /* To add space between each article */
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* align-items: center; */
+  align-items: center;
+  /* Para poner un espacio entre cada artículo */
+  /* To add space between each article */
+  gap: 10px;
 
-    width: 100%;
-    /* Para cuadrar los article con el footer y main */
-    /* To align the articles with the footer and main */
-    padding-top: 5rem;
-    padding-bottom: 15vh;
+  width: 100%;
+  /* Para cuadrar los article con el footer y main */
+  /* To align the articles with the footer and main */
+  padding-top: 5rem;
+  padding-bottom: 15vh;
 
 
-    /* Se quita por que sino ocuparía toda la ventana */
-    /* Removed because otherwise it would take up the whole window */
-    /* height: 100vh; */
-    background-color: rgb(255, 255, 255);
+  /* Se quita por que sino ocuparía toda la ventana */
+  /* Removed because otherwise it would take up the whole window */
+  /* height: 100vh; */
+  background-color: rgb(255, 255, 255);
 }
 
 
 
 #slider-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 90vw;
-    height: auto;
+  width: 90vw;
+  height: auto;
 
 }
 
 .swiper-slide-footer {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 1rem;
-    border-radius: 4rem;
-    background-color: rgb(228, 228, 228);
-    font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  border-radius: 4rem;
+  background-color: rgb(228, 228, 228);
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
 #trending-meme {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
 
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 
-    text-align: center;
+  text-align: center;
 }
 
 
 #trending-meme h2 {
 
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 
-    font-size: 2rem;
-    color: #520163;
-    margin-bottom: 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  color: #520163;
+  margin-bottom: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
 
 }
 
 .grid-memes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    padding-bottom: 15vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 15vh;
 
-    /* Reajuste de contenido */
-    /* Content readjustment */
-    overflow: auto;
-    gap: 1rem;
-    width: 100%;
+  /* Reajuste de contenido */
+  /* Content readjustment */
+  overflow: auto;
+  gap: 1rem;
+  width: 100%;
 }
 
 .meme-card {
-    width: calc(100% / 3 -1rem);
-    /* Altura fija*/
-    height: 300px;
-    border-radius: 1rem;
-    overflow: hidden;
-    background-color: white;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: calc(100% / 3 -1rem);
+  /* Altura fija*/
+  height: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
 .meme-card img {
-    width: 100%;
-    height: 65%;
-    display: block;
-    margin: 0 auto;
+  width: 100%;
+  height: 65%;
+  display: block;
+  margin: 0 auto;
 
 
 }
@@ -187,32 +187,32 @@
 /* Referencia para el hover https://www.youtube.com/watch?v=D1p2Sl6lxX4 author midudev */
 /* Reference for the hover effect https://www.youtube.com/watch?v=D1p2Sl6lxX4 author: midudev */
 .article-img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: all .3s;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all .3s;
 
 
 }
 
 
 .article-img img:first-child {
-    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
-    border-radius: 4px;
-    object-fit: cover;
-    width: 100%;
+  box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+  border-radius: 4px;
+  object-fit: cover;
+  width: 100%;
 }
 
 .article-img img:last-child {
-    position: absolute;
-    width: 200px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform: translateY(25%);
-    transition: .3s ease;
-    opacity: 0;
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(25%);
+  transition: .3s ease;
+  opacity: 0;
 
 }
 
@@ -221,24 +221,24 @@
 } */
 
 .article-img::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(bottom transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0) 95%);
-    opacity: 0;
-    transition: all .2s ease;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(bottom transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0) 95%);
+  opacity: 0;
+  transition: all .2s ease;
 
 }
 
 .article-img:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .article-img:hover img:last-child {
-    opacity: 1;
-    transform: translateY(10%);
+  opacity: 1;
+  transform: translateY(10%);
 }
 
 
@@ -254,74 +254,80 @@
 
 
 .content-article-card {
-    width: 90%;
+  width: 90%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    border-radius: 0.5rem;
-    overflow: hidden;
-    background-color: rgb(186, 255, 186);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: rgb(186, 255, 186);
 
 }
 
 
 .content-article-card div {
-    border: 2px solid transparent;
-    border-radius: 9px;
-    transition: border 0.3s, box-shadow 0.3s;
+  border: 2px solid transparent;
+  border-radius: 9px;
+  transition: border 0.3s, box-shadow 0.3s;
 
 }
 
 .content-article-card div:hover {
-    border: 2px solid #ffd700;
-    box-shadow: 0 0 20px #ffd700;
-    transform: translateY(-5px);
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 20px #ffd700;
+  transform: translateY(-5px);
 }
 
 #upload-barrio {
-    background-color: #f8f8f8;
-    padding: 2rem;
-    text-align: center;
+  background-color: #f8f8f8;
+  padding: 2rem;
+  text-align: center;
 }
 
 #upload-barrio h2 {
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-    color: #520163;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #520163;
 
 }
 
 #upload-barrio form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 
-    /*Para colocarlo tuve que pedir ayuda a Chatgpt, intenté durante 1 hora xd, pero no sabía 
+  /*Para colocarlo tuve que pedir ayuda a Chatgpt, intenté durante 1 hora xd, pero no sabía 
     que existía el max o el min */
-    /* To position it I had to ask ChatGPT for help — I tried for an hour lol, but didn’t know that max or min existed */
-    max-width: 400px;
-    margin: 0 auto;
+  /* To position it I had to ask ChatGPT for help — I tried for an hour lol, but didn’t know that max or min existed */
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 #upload-barrio input [type="text"],
 #upload-barrio input [type="file"] {
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid white;
-    font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 1rem;
 }
 
 #file_form {
-    width: 100%;  /* Ancho completo del contenedor */
-    height: 100px;  /* Altura fija (ajusta) */
-    resize: vertical;  /* Permite al usuario redimensionar verticalmente */
-    font-family: inherit;  /* Mantiene la fuente de la página */
-    padding: 10px;  /* Espacio interno */
-    border: 1px solid #ccc;  /* Borde simple */
+  width: 100%;
+  /* Ancho completo del contenedor */
+  height: 100px;
+  /* Altura fija (ajusta) */
+  resize: vertical;
+  /* Permite al usuario redimensionar verticalmente */
+  font-family: inherit;
+  /* Mantiene la fuente de la página */
+  padding: 10px;
+  /* Espacio interno */
+  border: 1px solid #ccc;
+  /* Borde simple */
 }
 
 
@@ -337,83 +343,83 @@
 /* object-fit: cover; Hace que la imagen llene el espacio sin deformarse. */
 /* object-fit: cover; Makes the image fill the space without distortion. */
 #container-footer {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 
-    width: 100%;
-    min-height: 200px;
-    padding: 1rem;
-    gap: 10px;
+  width: 100%;
+  min-height: 200px;
+  padding: 1rem;
+  gap: 10px;
 
-    background-color: rgb(82, 1, 99);
-    color: white;
+  background-color: rgb(82, 1, 99);
+  color: white;
 
 }
 
 
 
 .icon-pageweb {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #container-footer-content-text {
-    display: flex;
-    text-align: center;
+  display: flex;
+  text-align: center;
 }
 
 .container-footer-menu-bassic,
 .container-footer-social-red,
 .container-footer-image {
-    /* Expandir elemento */
-    flex-grow: 1;
+  /* Expandir elemento */
+  flex-grow: 1;
 
 }
 
 .container-footer-social-red,
 .container-footer-image {
-    display: none;
+  display: none;
 }
 
 .container-footer-social-red button {
-    border: 0.5rem;
+  border: 0.5rem;
 }
 
 #container-footer-social-red button:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .container-footer-image img {
-    width: 5rem;
-    height: 5rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .container-footer-social-red a {
-    /* Para que hover funcione */
-    display: inline-block;
-    transition: all 0.3s ease;
-    border-radius: 5px;
-    padding: 5xp;
+  /* Para que hover funcione */
+  display: inline-block;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  padding: 5xp;
 }
 
-.container-footer-social-red a:hover{
-    background-color: #B13BFF;
-    transform: scale(1.1);
-    box-shadow: 0 0 10px;
+.container-footer-social-red a:hover {
+  background-color: #B13BFF;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px;
 }
 
 .container-footer-social-red a:hover img {
-    /* Hace la imagen más brillante y satura */
-    filter: brightness(1.2) saturate(1.5);
-    transition: filter 0.3s ease;
+  /* Hace la imagen más brillante y satura */
+  filter: brightness(1.2) saturate(1.5);
+  transition: filter 0.3s ease;
 }
 
 .footer-copyrigth {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -425,111 +431,111 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    .home-header-Tablet-left {
-        display: block;
-    }
+  .home-header-Tablet-left {
+    display: block;
+  }
+
+  .home-header-Tablet-middle,
+  .home-header-Tablet-rigth {
+    display: none;
+  }
+
+  #container-main {
+    position: static;
+    gap: 10px;
+    padding-bottom: 15vh;
+
+    /* Por problemas de columnas, me voy asegurar que sea flex el bloque */
+    /* Due to column issues, I’ll make sure the block is flex */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+
+  .content-article-card {
+    width: 48%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(186, 255, 186);
+  }
+
+
+
+  .content-article-middle,
+  .content-article-rigth,
+  .content-article-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* gap: 0.5rem; */
+    padding: 1rem;
+    margin: 0;
+
+    width: 31%;
+    height: auto;
+
+    /* background-color: white; */
+    border: 1px solid #eee;
+    border-radius: 5px;
+
+
+  }
+
+  .article-img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+    border-radius: 0.5rem 0.5rem 0;
+    display: block;
+  }
+
+  .container-footer-social-red {
+    display: flex;
+    flex-grow: 1;
+
+  }
+
+
+
+
+
+
+
+
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
 
     .home-header-Tablet-middle,
     .home-header-Tablet-rigth {
-        display: none;
+      display: block;
     }
 
-    #container-main {
-        position: static;
-        gap: 10px;
-        padding-bottom: 15vh;
-
-        /* Por problemas de columnas, me voy asegurar que sea flex el bloque */
-        /* Due to column issues, I’ll make sure the block is flex */
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-
-    }
 
     .content-article-card {
-        width: 48%;
-        height: auto;
-
-        display: flex;
-        flex-direction: column;
-
-        background-color: rgb(186, 255, 186);
+      width: 31%;
+      height: auto;
     }
 
-
-
-    .content-article-middle,
-    .content-article-rigth,
-    .content-article-up {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        /* gap: 0.5rem; */
-        padding: 1rem;
-        margin: 0;
-
-        width: 31%;
-        height: auto;
-
-        /* background-color: white; */
-        border: 1px solid #eee;
-        border-radius: 5px;
-
-
+    .home-header-left img {
+      width: 40%;
+      height: 4rem;
+      overflow: cover;
+      border-radius: 0.5rem 0.5rem 0;
     }
 
-    .article-img img {
-        width: 100%;
-        height: 100%;
-
-        object-fit: contain;
-        object-position: center;
-        border-radius: 0.5rem 0.5rem 0;
-        display: block;
+    .container-footer-image {
+      display: block;
     }
 
-    .container-footer-social-red {
-        display: flex;
-        flex-grow: 1;
-
-    }
-
-
-
-
-
-
-
-
-
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-
-        .home-header-Tablet-middle,
-        .home-header-Tablet-rigth {
-            display: block;
-        }
-
-
-        .content-article-card {
-            width: 31%;
-            height: auto;
-        }
-
-        .home-header-left img {
-            width: 40%;
-            height: 4rem;
-            overflow: cover;
-            border-radius: 0.5rem 0.5rem 0;
-        }
-
-        .container-footer-image {
-            display: block;
-        }
-
-    }
+  }
 
 }
